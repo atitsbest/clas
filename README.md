@@ -10,7 +10,7 @@ Mit diesem Script können die Templates in eigene Dateien ausgelagert werden
 um später wieder zu einer einzelnen datei kompiliert zu werden.
 
 Die Templates werden folgendermaßen in die HTML-Datei eingebunden:
-  <script id="<template_datei_name_ohne_ext" type="text/template">
-    ...template..
- </script>
+	<script id="<template_datei_name_ohne_ext" type="text/template">
+		...template..
+	</script>
  
