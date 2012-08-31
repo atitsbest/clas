@@ -25,12 +25,12 @@ optparse = OptionParser.new do|opts|
 	opts.banner = "Usage: merger.rb [options]"
 
 	# Define the options, and what they do
-	options[:input_name] = 'index.html'
+	options[:input_name] = 'index_.html'
 	opts.on( '-i', '--input FILE', 'Hier sollen die Templates rein. Datei dient als Vorlage und wird NICHT geändert.' ) do |name|
 		options[:input_name] = name
 	end
 
-	options[:output_name] = 'index_.html'
+	options[:output_name] = 'index.html'
 	opts.on( '-o', '--output FILE', 'In diese Datei wird die Mischung aus Html und Templates geschrieben.' ) do |name|
 		options[:output_name] = name
 	end
@@ -110,7 +110,7 @@ def merge_templates
 	# Neue Datei schreiben
 	File.open(Output_name, 'w') {|f| f.write(index_content) }
 
-	puts "index.html + #{template_names.length} Templates => index_.html"
+	puts "#{Index_name} + #{template_names.length} Templates => #{Output_name}"
 end
 
 #
